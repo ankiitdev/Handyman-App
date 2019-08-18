@@ -1,0 +1,25 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lv_bookings"
+        >
+
+    </ListView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No bookings made !!"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/empty_view"/>
+
+
+
+</LinearLayout>

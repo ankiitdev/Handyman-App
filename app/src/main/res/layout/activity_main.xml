@@ -1,0 +1,175 @@
+<!--20 July 2019
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/tool_pic"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="335dp">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CUSTOMER"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:background="@drawable/curve_main"
+        android:textColor="#fff"
+        android:onClick="hreg"
+        android:elevation="8dp"
+        android:id="@+id/cust"
+        />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HANDYMAN"
+            android:layout_marginLeft="110dp"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:background="@drawable/curve_main"
+            android:onClick="cmob"
+            android:elevation="18dp"
+            android:textColor="#fff"
+            android:id="@+id/hman"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
+curve_main for button
+-->
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:diagonal="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bg_gradient"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="I am"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="25dp"
+       />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/rbtn_grp"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" a Customer"
+            android:id="@+id/rbtn_cust"
+            android:textSize="22sp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" a Handyman"
+            android:id="@+id/rbtn_hman"
+            android:textSize="22sp"/>
+
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hman"
+        />
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:visibility="gone"
+    android:id="@+id/btn_cust">
+      <Button
+          android:layout_width="180dp"
+          android:layout_height="wrap_content"
+          android:text="SIGN IN"
+          android:layout_marginTop="80dp"
+          android:background="@drawable/mainbtn_bfull"
+          android:textColor="#fff"
+          android:layout_gravity="center"
+          android:textSize="16sp"
+          android:onClick="cust_signin"/>
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:layout_gravity="center"
+        android:textColor="#696260"
+        android:background="@drawable/mainbtn_gfull"
+        android:layout_marginTop="20dp"
+        android:onClick="cust_signup"/>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:id="@+id/btn_hman">
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="SIGN IN"
+        android:id="@+id/btn1"
+        android:layout_marginTop="80dp"
+        android:textColor="#fff"
+        android:background="@drawable/mainbtn_grey"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:onClick="hman_signin"/>
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:id="@+id/btn2"
+        android:layout_gravity="center"
+        android:background="@drawable/mainbtn_blue"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="20dp"
+        android:onClick="hman_signup"/>
+
+</LinearLayout>
+
+
+    <!--View
+        android:layout_marginTop="165dp"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="10dp"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"/-->
+    <!--TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="15sp"
+        android:layout_marginTop="15dp"
+        android:text="HANDYMAN APP | DESIGNED BY ANKIT SHARMA"/-->
+
+</LinearLayout>

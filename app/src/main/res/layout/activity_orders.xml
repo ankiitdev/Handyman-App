@@ -1,0 +1,142 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgbgbg"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="380dp"
+        android:background="@drawable/curve_two"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:backgroundTint="#b1f1eaea"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order ID"
+            android:textStyle="bold"
+            android:textColor="#FFEF0505"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+
+            android:textStyle="bold"
+            android:id="@+id/tv_oid"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer Name"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:textColor="#FFEF0505"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+
+            android:textStyle="italic"
+            android:id="@+id/tv_custname"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile No"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:textColor="#FFEF0505"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+
+            android:textStyle="italic"
+            android:id="@+id/tv_custmobile"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:textColor="#FFEF0505"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textStyle="italic"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:id="@+id/tv_description"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:textColor="#FFEF0505"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textStyle="italic"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:id="@+id/tv_address"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Booking Time"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:textColor="#FFEF0505"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textStyle="italic"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:id="@+id/book_t"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="8dp"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accept"
+            android:textColor="#fff"
+            android:elevation="8dp"
+            android:background="@drawable/curve_three"
+            android:backgroundTint="@color/colorPrimary"
+            android:id="@+id/acpt"
+            android:onClick="accept"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reject"
+            android:elevation="8dp"
+            android:textColor="#fff"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/curve_three"
+            android:backgroundTint="@color/colorPrimary"
+            android:id="@+id/rjct"
+            android:onClick="reject"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No bookings made !!"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="280dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/empty_view"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/handymanList">
+
+    </ListView>
+</LinearLayout>

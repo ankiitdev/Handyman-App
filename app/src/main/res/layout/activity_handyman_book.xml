@@ -1,0 +1,63 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+
+    android:background="@drawable/bgbgbg"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/circle"
+        android:backgroundTint="#07989d"
+        android:text="H"
+        android:textColor="#fff"
+        android:textSize="80sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_hman_name"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:layout_margin="3dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:id="@+id/tv_hman_prof"
+        android:gravity="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_hman_no"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="10dp"
+        android:hint="Description(max 30 characters)"
+        android:gravity="center"
+        android:id="@+id/et_desc"
+        android:layout_height="wrap_content"
+
+        android:textSize="18sp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BOOK"
+        android:layout_marginTop="50dp"
+        android:onClick="book"
+        android:background="@drawable/curve_three"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="#fff"/>
+
+
+
+</LinearLayout>

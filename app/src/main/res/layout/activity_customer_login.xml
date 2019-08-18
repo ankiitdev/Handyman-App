@@ -1,0 +1,83 @@
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/backgd"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:text="CUSTOMER LOGIN"
+        android:layout_marginHorizontal="10dp"
+        android:textColor="#00acc1"
+        android:textStyle="bold"
+
+
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your registered mobile number"
+        android:maxLength="10"
+        android:inputType="number"
+        android:layout_marginHorizontal="20dp"
+        android:textSize="18sp"
+        android:id="@+id/clogin_num"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:id="@+id/clogin_pass"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:layout_marginHorizontal="72dp"
+        android:onClick="clogin"
+        android:layout_marginTop="60dp"
+        android:textColor="#fff"
+
+        android:background="@drawable/layerlist"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New User ?"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  REGISTER"
+            android:onClick="cstmr"
+            android:textColor="#00acc1"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password ?"
+        android:onClick="change_cpassword"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:textStyle="italic"
+        android:textColor="#00acc1"/>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter your mobile number to proceed"
+        android:textSize="25sp"
+        android:textColor="#00acc1"
+        android:layout_margin="20sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20sp"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="+91"
+            android:layout_marginTop="45dp"
+            android:textColor="#00acc1"
+            android:background="@android:color/transparent"
+            android:editable="false"/>
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            app:mtf_image="@drawable/ic_arrow_forward_black_24dp"
+            app:mtf_openKeyboardOnFocus="true"
+            app:mtf_labelColor="#666"
+
+            >
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Your 10 digit mobile number"
+            android:padding="10dp"
+            android:maxLength="10"
+            android:inputType="number"
+            android:id="@+id/et_mobile"/>
+        </com.github.florent37.materialtextfield.MaterialTextField>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#666"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="NEXT"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:textSize="25sp"
+            android:textColor="#00acc1"
+            android:onClick="next"/>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

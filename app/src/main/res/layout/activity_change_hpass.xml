@@ -1,0 +1,48 @@
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:text="CHANGE PASSWORD"
+        android:layout_marginHorizontal="10dp"
+        android:textColor="#00acc1"
+        android:textStyle="bold"
+
+
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Current Password"
+        android:maxLength="11"
+        android:inputType="textPassword"
+        android:textSize="18sp"
+        android:id="@+id/hlogin_opass"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="New Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:id="@+id/hlogin_npass"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CHANGE"
+        android:onClick="cpswd_hman"
+        android:layout_marginTop="60dp"
+        android:background="#00acc1"/>
+
+
+
+
+</LinearLayout>
