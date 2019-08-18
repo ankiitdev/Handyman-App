@@ -34,7 +34,7 @@ CaptchaGenerator cg;
       }
       else
       {
-        msg91=new MSG91("196023AwNplgJ6qS5a722783");
+        msg91=new MSG91("");
         String otp=cg.getOTP();
         msg91.composeMessage("HNDMAN","Your OTP for HANDYMAN APP is "+otp);
         msg91.to(mnumber);
