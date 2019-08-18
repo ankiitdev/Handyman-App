@@ -15,10 +15,10 @@ public class ConnectionHelper {
 
     public Connection getConnection()
     {
-        IP="184.168.194.55";
-        DB="AppDb";
-        DBUsername="appdb";
-        DBPassword="appdb@123";
+        IP="";
+        DB="";
+        DBUsername="";
+        DBPassword="";
         Connection con=null;
         StrictMode.ThreadPolicy policy=new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
